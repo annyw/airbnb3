@@ -22,6 +22,10 @@ a:hover{
 	text-decoration: none;
 }
 
+.padding-none{
+	padding: 0px;
+}
+
 li a{
 	font-size: 14px;
 }
@@ -130,12 +134,11 @@ select:active{
 }
 
 .bar{
-	padding:0px;
+
 	border: 1px solid #c4c4c4;
 	border-radius: 2px;
 	line-height: 1;
 }
-
 
 input:focus{
 	outline: none;
@@ -148,7 +151,7 @@ i.icon-arrow-right {
     line-height: 36px;
 }
 
-.date{
+.bar-setting{
 	background-color: #fff;
 	margin-left: -1px;
 }
@@ -166,6 +169,8 @@ i.icon-arrow-right {
 	border-radius: 2px;
 	font-size: 16px;
 	padding: 8px 27px;
+	border: 0px;
+	border-bottom: 1px solid #e00007;
 }
 
 .btn-red{
@@ -186,7 +191,7 @@ i.icon-arrow-right {
 	margin-bottom: 36px;
 }
 
-.img{
+.pictures{
 	height: 390px;
 	background-position: 50%;
     background-repeat: no-repeat;
@@ -195,25 +200,12 @@ i.icon-arrow-right {
     margin-bottom: 30px;
 }
 
-.img:before{
+.pictures:before{
   content: '';
   display: inline-block;
   vertical-align: middle;
   width: 0;
   height: 100%;
-}
-
-.h2{
-	color: #fff;
-	display: inline-block;
-	vertical-align: middle;
-	margin: 0px;
-	width: 100%;
-}
-
-.va-middle{
-	display: inline-block;
-	vertical-align: middle;
 }
 
 .white-btn{
@@ -240,7 +232,7 @@ i.icon-arrow-right {
 	display: inline-block;
 }
 
-.rent{
+.va-middle{
 	color: #fff;
 	display: inline-block;
 	vertical-align: middle;
@@ -269,6 +261,41 @@ i.icon-arrow-right {
 	vertical-align: top;
 }
 
+.carousel{
+	height: 600px;
+	overflow: hidden;
+	margin-top: 48px;
+}
 
+.carousel-control{
+	width: auto;
+	top: 50%;
+}
 
+.carousel-control.left,
+.carousel-control.right{
+	background-image: none;
+}
 
+.carousel-control i{
+	font-size: 60px;
+	line-height:1;
+	text-shadow: none;
+	opacity: .7;
+	padding: 20px;
+}
+
+.carousel-img{
+	position: relative;
+	width: 100%;
+	top: -100px;
+}
+
+.carousel{
+	background-color: #ffb400;
+}
+
+.carousel-caption{
+	text-shadow: none;
+	top: 50%;
+}
